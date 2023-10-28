@@ -31,7 +31,8 @@ struct ContentView: View {
                 }
             }
             .sheet(isPresented: $viewModel.presentSheet) {
-                EmptyView()
+                AddEditPostView()
+                    .interactiveDismissDisabled()
             }
         }
     }

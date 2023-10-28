@@ -20,6 +20,8 @@
 		ABE0A8202AECC04B00E4FF6C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0A81F2AECC04B00E4FF6C /* ContentViewModel.swift */; };
 		ABE0A8222AECC27F00E4FF6C /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0A8212AECC27F00E4FF6C /* DatabaseService.swift */; };
 		ABE0A8242AECC2BC00E4FF6C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0A8232AECC2BC00E4FF6C /* Post.swift */; };
+		ABE0A8292AECCA7700E4FF6C /* AddEditPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0A8282AECCA7700E4FF6C /* AddEditPostView.swift */; };
+		ABE0A82B2AECCA8600E4FF6C /* AddEditPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0A82A2AECCA8600E4FF6C /* AddEditPostViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		ABE0A81F2AECC04B00E4FF6C /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		ABE0A8212AECC27F00E4FF6C /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 		ABE0A8232AECC2BC00E4FF6C /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		ABE0A8282AECCA7700E4FF6C /* AddEditPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditPostView.swift; sourceTree = "<group>"; };
+		ABE0A82A2AECCA8600E4FF6C /* AddEditPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditPostViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB43C6C82AED63EB00EB2603 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ABE0A81E2AECC03F00E4FF6C /* ContentView */,
+				ABE0A8252AECCA4F00E4FF6C /* AddEditPostView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AB43C6C92AED63F500EB2603 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ABE0A8232AECC2BC00E4FF6C /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AB43C6CA2AED640300EB2603 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ABE0A8212AECC27F00E4FF6C /* DatabaseService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		ABE0A7942AEC37BC00E4FF6C = {
 			isa = PBXGroup;
 			children = (
@@ -70,9 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				ABE0A7A02AEC37BC00E4FF6C /* PushNotificationsTutorialApp.swift */,
-				ABE0A8232AECC2BC00E4FF6C /* Post.swift */,
-				ABE0A8212AECC27F00E4FF6C /* DatabaseService.swift */,
-				ABE0A81E2AECC03F00E4FF6C /* ContentView */,
+				AB43C6C92AED63F500EB2603 /* Models */,
+				AB43C6C82AED63EB00EB2603 /* Views */,
+				AB43C6CA2AED640300EB2603 /* Services */,
 				ABE0A7A42AEC37BD00E4FF6C /* Assets.xcassets */,
 				ABE0A7AE2AEC385300E4FF6C /* GoogleService-Info.plist */,
 				ABE0A7A62AEC37BD00E4FF6C /* Preview Content */,
@@ -95,6 +124,15 @@
 				ABE0A81F2AECC04B00E4FF6C /* ContentViewModel.swift */,
 			);
 			path = ContentView;
+			sourceTree = "<group>";
+		};
+		ABE0A8252AECCA4F00E4FF6C /* AddEditPostView */ = {
+			isa = PBXGroup;
+			children = (
+				ABE0A8282AECCA7700E4FF6C /* AddEditPostView.swift */,
+				ABE0A82A2AECCA8600E4FF6C /* AddEditPostViewModel.swift */,
+			);
+			path = AddEditPostView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,10 +216,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABE0A82B2AECCA8600E4FF6C /* AddEditPostViewModel.swift in Sources */,
 				ABE0A7A32AEC37BC00E4FF6C /* ContentView.swift in Sources */,
 				ABE0A7A12AEC37BC00E4FF6C /* PushNotificationsTutorialApp.swift in Sources */,
 				ABE0A8222AECC27F00E4FF6C /* DatabaseService.swift in Sources */,
 				ABE0A8202AECC04B00E4FF6C /* ContentViewModel.swift in Sources */,
+				ABE0A8292AECCA7700E4FF6C /* AddEditPostView.swift in Sources */,
 				ABE0A8242AECC2BC00E4FF6C /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
