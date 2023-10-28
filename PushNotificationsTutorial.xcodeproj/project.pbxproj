@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB43C6CD2AED64E600EB2603 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43C6CC2AED64E600EB2603 /* LoginView.swift */; };
+		AB43C6D12AED64FF00EB2603 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43C6D02AED64FF00EB2603 /* SignupView.swift */; };
+		AB43C6D32AED650800EB2603 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43C6D22AED650800EB2603 /* SignUpViewModel.swift */; };
+		AB43C6D52AED664100EB2603 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB43C6D42AED664100EB2603 /* LoginViewModel.swift */; };
 		ABE0A7A12AEC37BC00E4FF6C /* PushNotificationsTutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0A7A02AEC37BC00E4FF6C /* PushNotificationsTutorialApp.swift */; };
 		ABE0A7A32AEC37BC00E4FF6C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0A7A22AEC37BC00E4FF6C /* ContentView.swift */; };
 		ABE0A7A52AEC37BD00E4FF6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE0A7A42AEC37BD00E4FF6C /* Assets.xcassets */; };
@@ -25,6 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB43C6CC2AED64E600EB2603 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AB43C6D02AED64FF00EB2603 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		AB43C6D22AED650800EB2603 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		AB43C6D42AED664100EB2603 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		ABE0A79D2AEC37BC00E4FF6C /* PushNotificationsTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushNotificationsTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE0A7A02AEC37BC00E4FF6C /* PushNotificationsTutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsTutorialApp.swift; sourceTree = "<group>"; };
 		ABE0A7A22AEC37BC00E4FF6C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +65,7 @@
 		AB43C6C82AED63EB00EB2603 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AB43C6CB2AED64D200EB2603 /* Onboarding */,
 				ABE0A81E2AECC03F00E4FF6C /* ContentView */,
 				ABE0A8252AECCA4F00E4FF6C /* AddEditPostView */,
 			);
@@ -77,6 +86,33 @@
 				ABE0A8212AECC27F00E4FF6C /* DatabaseService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		AB43C6CB2AED64D200EB2603 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				AB43C6CF2AED64F000EB2603 /* SignupView */,
+				AB43C6CE2AED64E900EB2603 /* LoginView */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		AB43C6CE2AED64E900EB2603 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				AB43C6CC2AED64E600EB2603 /* LoginView.swift */,
+				AB43C6D42AED664100EB2603 /* LoginViewModel.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		AB43C6CF2AED64F000EB2603 /* SignupView */ = {
+			isa = PBXGroup;
+			children = (
+				AB43C6D02AED64FF00EB2603 /* SignupView.swift */,
+				AB43C6D22AED650800EB2603 /* SignUpViewModel.swift */,
+			);
+			path = SignupView;
 			sourceTree = "<group>";
 		};
 		ABE0A7942AEC37BC00E4FF6C = {
@@ -216,12 +252,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB43C6D12AED64FF00EB2603 /* SignupView.swift in Sources */,
 				ABE0A82B2AECCA8600E4FF6C /* AddEditPostViewModel.swift in Sources */,
+				AB43C6D52AED664100EB2603 /* LoginViewModel.swift in Sources */,
+				AB43C6D32AED650800EB2603 /* SignUpViewModel.swift in Sources */,
 				ABE0A7A32AEC37BC00E4FF6C /* ContentView.swift in Sources */,
 				ABE0A7A12AEC37BC00E4FF6C /* PushNotificationsTutorialApp.swift in Sources */,
 				ABE0A8222AECC27F00E4FF6C /* DatabaseService.swift in Sources */,
 				ABE0A8202AECC04B00E4FF6C /* ContentViewModel.swift in Sources */,
 				ABE0A8292AECCA7700E4FF6C /* AddEditPostView.swift in Sources */,
+				AB43C6CD2AED64E600EB2603 /* LoginView.swift in Sources */,
 				ABE0A8242AECC2BC00E4FF6C /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
